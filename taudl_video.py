@@ -22,7 +22,7 @@ from reid.utils.data.preprocessor_video import Preprocessor_Video
 from reid.utils.data.sampler_mt import RandomIdentitySampler
 from reid.utils.logging import Logger
 from reid.utils.serialization import load_checkpoint, save_checkpoint
-import ipdb
+# import ipdb
 
 
 def flatten_dataset(dataset):
@@ -182,7 +182,7 @@ def main(args):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Triplet loss classification")
     # data
-    parser.add_argument('-d', '--dataset', type=str, default='cuhk03',
+    parser.add_argument('-d', '--dataset', type=str, default='prid2011',
                         choices=datasets.names())
     parser.add_argument('-b', '--batch-size', type=int, default=256)
     parser.add_argument('-j', '--workers', type=int, default=4)

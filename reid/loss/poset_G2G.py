@@ -33,7 +33,7 @@ class PosetLoss_G2G(nn.Module):
         group_num = int(sample_num / num_instances)  # m is the num of classes in minibatch
 
         # Compute the mask via camid
-        mask = torch.ByteTensor(group_num, sample_num).zero_().cuda()
+        mask = torch.BoolTensor(group_num, sample_num).zero_().cuda()
         for i_group in range(group_num):
             for j_instance in range(num_instances):
                 mask[i_group][i_group * num_instances + j_instance] = 1
@@ -66,7 +66,7 @@ class PosetLoss_G2G(nn.Module):
         sigma = 4
         exp_dist = torch.exp(-dist / (2 * sigma))
 
-        mask = torch.ByteTensor(n, m).zero_().cuda()
+        mask = torch.BoolTensor(n, m).zero_().cuda()
         dist_near = Variable(torch.FloatTensor(n).zero_().cuda())
         K = int(task_num / 2)
         for i in range(n):

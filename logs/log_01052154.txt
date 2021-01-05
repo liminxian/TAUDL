@@ -1,0 +1,3 @@
+0/10
+# train identites: 89, # test identites 89
+ number of images per tracklet: 28 ~ 675, average 108.0505617977528

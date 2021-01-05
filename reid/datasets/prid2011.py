@@ -25,8 +25,8 @@ class PRID2011(object):
     def __init__(self, root, split_id=10, min_seq_len=0):
         self.dataset_dir = osp.join(root, self.dataset_dir)
         self.split_path = osp.join(self.dataset_dir, 'info/splits_prid2011.json')
-        self.cam_a_path = osp.join(self.dataset_dir, 'multi_shot', 'cam_a')
-        self.cam_b_path = osp.join(self.dataset_dir, 'multi_shot', 'cam_b')
+        self.cam_a_path = osp.join(self.dataset_dir, 'video_data', 'cam1')
+        self.cam_b_path = osp.join(self.dataset_dir, 'video_data', 'cam2')
 
         self._check_before_run()
         splits = read_json(self.split_path)

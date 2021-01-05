@@ -1,0 +1,16 @@
+0/10
+# train identites: 89, # test identites 89
+Python 3.7.0 (default, Oct  9 2018, 10:31:47) 
+Type 'copyright', 'credits' or 'license' for more information
+IPython 7.19.0 -- An enhanced Interactive Python. Type '?' for help.
+PyDev console: using IPython 7.19.0
+
+'/homes/ql001/Dataset/PRID2011/video_data/cam_a/person_0004/*.png'
+'person_0004'
+[0;31m---------------------------------------------------------------------------[0m
+[0;31mNameError[0m                                 Traceback (most recent call last)
+[0;32m~/videoreid/Tracklet-Association-Unsupervised-Deep-Learning/reid/datasets/prid2011.py[0m in [0;36m<module>[0;34m[0m
+[0;32m----> 1[0;31m [0mcam_a_path[0m[0;34m[0m[0m
+[0m
+[0;31mNameError[0m: name 'cam_a_path' is not defined
+'/homes/ql001/Dataset/PRID2011/video_data/cam_a'
